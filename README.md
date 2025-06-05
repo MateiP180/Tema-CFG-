@@ -1,10 +1,18 @@
 # 🎯 CFG String Generator & Derivation Validator
 
-Acest proiect Python lucrează cu **gramatici independente de context (CFG)** pentru a genera și valida șiruri. În mod special, se ocupă de o gramatică simplă care generează șiruri echilibrate de forma `aⁿbⁿ`. Util pentru studenți, pasionați de teoria limbajelor formale sau automatizare.
+Acest proiect Python explorează modul în care **gramaticile independente de context (Context-Free Grammars - CFG)** pot fi utilizate pentru a genera și valida șiruri. Programul permite atât **crearea de șiruri valide** conform unei gramatici, cât și **verificarea** dacă un șir aparține limbajului definit de aceasta, oferind în același timp și o **derivare pas cu pas** a șirului, dacă este posibilă.
 
 ---
 
-## 📚 Descriere
+## 🧾 Descriere detaliată
+
+### 🔍 Ce este o gramatică independentă de context?
+
+O **gramatică independentă de context (CFG)** este o structură formală utilizată pentru a descrie limbaje formale. Este formată din:
+- un set de **simboluri terminale** (caractere din șiruri finale),
+- un set de **simboluri non-terminale** (simboluri care pot fi înlocuite),
+- un **simbol de start**,
+- un set de **reguli de producție** care descriu cum pot fi înlocuite simbolurile non-terminale.
 
 Gramatica CFG definită este:
 - **Non-terminal:** `S`
@@ -12,14 +20,7 @@ Gramatica CFG definită este:
 - **Simbol de start:** `S`
 - **Producții:**
   - `S → aSb`
-  - `S → ε` (vid)
-
-### 🔁 Ce face programul?
-- Generează **aleator 10 șiruri** bazate pe această gramatică.
-- Verifică dacă un șir dat aparține limbajului generat de gramatică.
-- Afișează **pașii derivației** pentru un șir dat, dacă există o derivare validă.
-
----
+  - `S → ε` (vid) -> notat in cod cu "~"
 
 ## 🛠️ Tehnologii folosite
 
